@@ -9,7 +9,7 @@ def question():
     step = randint(-10, 11)
     length = randint(5, 11)
     numbers = [randint(0, 100)]
-    numbers.extend((numbers[i-1] + step) for i in range(1, length, 1))
+    numbers.extend((numbers[i - 1] + step) for i in range(1, length, 1))
     index = randint(0, length - 1)
     numbers[index] = '..'
     string = ' '.join(str(num) for num in numbers)

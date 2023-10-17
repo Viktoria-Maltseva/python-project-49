@@ -13,8 +13,8 @@ def main():
         print(f"Question: {number}")
         print("Your answer: ", end='')
         answer = input()
-        if ((number % 2 == 0 and answer == 'yes') or
-                (number % 2 == 1 and answer == 'no')):
+        if ((number % 2 == 0 and answer == 'yes')
+                or (number % 2 == 1 and answer == 'no')):
             print("Correct!")
             correct_answers += 1
         else:

@@ -16,8 +16,8 @@ def run(game_name):
         if correct_answers < 5:
             print("Correct!")
         else:
-            print(f"'{answer}' is wrong answer ;(. " +
-                  f"Correct answer was '{module.get_answer(question)}'")
+            print(f"'{answer}' is wrong answer ;(. "
+                  + f"Correct answer was '{module.get_answer(question)}'")
             print(f"Let's try again, {name}!")
 
     if (correct_answers == 3):

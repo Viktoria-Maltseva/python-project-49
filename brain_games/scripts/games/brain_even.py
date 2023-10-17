@@ -17,8 +17,8 @@ def get_answer(question):
 
 def count_answers(number, answer):
     count = 0
-    if ((number % 2 == 0 and answer == 'yes') or
-            (number % 2 == 1 and answer == 'no')):
+    if ((number % 2 == 0 and answer == 'yes')
+            or (number % 2 == 1 and answer == 'no')):
         count = 1
     else:
         count = 5

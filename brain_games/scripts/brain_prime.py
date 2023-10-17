@@ -30,8 +30,8 @@ def main():
             print("Correct!")
         else:
             count_answers += 5
-            print(f"'{answer}' is wrong answer ;(. " +
-                  f"Correct answer was '{right_answer}'!")
+            print(f"'{answer}' is wrong answer ;(. "
+                  + f"Correct answer was '{right_answer}'!")
             print(f"Let's try again, {name}!")
             break
     if count_answers == 3:

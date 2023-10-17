@@ -26,4 +26,4 @@ def run(game_name):
             print(f"Let's try again, {name}!")
 
     if (correct_answers == 3):
-        print(f"Congratulation, {name}!")
+        print(f"Congratulations, {name}!")

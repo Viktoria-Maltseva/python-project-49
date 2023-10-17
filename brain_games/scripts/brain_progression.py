@@ -34,7 +34,7 @@ def main():
             correct_answers += 5
 
     if correct_answers == 3:
-        print(f"Congratulation, {name}!")
+        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":

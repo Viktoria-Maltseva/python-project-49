@@ -35,7 +35,7 @@ def main():
             print(f"Let's try again, {name}!")
             break
     if count_answers == 3:
-        print(f"Congratulation, {name}!")
+        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":

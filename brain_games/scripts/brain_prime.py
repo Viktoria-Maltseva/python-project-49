@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 import math
-import brain_games.script.brain_games
+import brain_games.scripts.brain_games
 
 
 def prime(number):

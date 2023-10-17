@@ -23,8 +23,8 @@ def main():
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. " +
-                  f"Correct answer was '{math.gcd(number_1, number_2)}'")
+            print(f"'{answer}' is wrong answer ;(. "
+                  + f"Correct answer was '{math.gcd(number_1, number_2)}'")
             print(f"Let's try again, {name}!")
             correct_answers += 5
     if correct_answers == 3:

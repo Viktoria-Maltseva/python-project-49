@@ -28,8 +28,8 @@ def main():
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{answer}' is wrong answer;(. " +
-                  f"Correct answer was '{closed_number}'")
+            print(f"'{answer}' is wrong answer;(. "
+                  + f"Correct answer was '{closed_number}'")
             print(f"Let's try again, {name}!")
             correct_answers += 5
 

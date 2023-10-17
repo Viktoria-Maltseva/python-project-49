@@ -1,9 +1,4 @@
 from brain_games.scripts.brain_games import main
-import brain_games.scripts.games.brain_even
-import brain_games.scripts.games.brain_calc
-import brain_games.scripts.games.brain_gcd
-import brain_games.scripts.games.brain_progression
-import brain_games.scripts.games.brain_prime
 
 
 def run(game_name):

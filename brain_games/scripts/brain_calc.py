@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from random import randint
-import brain_games.scripts.brain_games
+from brain_games.scripts.brain_games import main, name
 
 
 def main():
-    name = brain_games.scripts.brain_games.main()
+    name = main()
     print("What is the result of the expression?.")
     correct_answers = 0
     while (correct_answers < 3):

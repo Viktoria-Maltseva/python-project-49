@@ -1,13 +1,15 @@
-import brain_games.scripts.brain_games
+from brain_games.scripts.brain_games import main, name
 import brain_games.scripts.games.brain_even
 import brain_games.scripts.games.brain_calc
 import brain_games.scripts.games.brain_gcd
+import brain_games.scripts.games.brain_progression
+import brain_games.scripts.games.brain_prime
 
 
 def run(game_name):
     module = __import__(f'brain_games.scripts.games.{game_name}',
                         fromlist=[game_name])
-    name = brain_games.scripts.brain_games.main()
+    name = main()
     print(module.ask())
     correct_answers = 0
     while (correct_answers < 3):

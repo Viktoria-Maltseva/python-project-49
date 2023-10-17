@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 import sys
-from brain_games.scripts.brain_games import main, name
+import brain_games.scripts.brain_games
 
 
 def main():

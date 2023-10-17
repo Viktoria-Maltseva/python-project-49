@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 import math
-from brain_games.script.brain_games import main, name
+import brain_games.script.brain_games
 
 
 def prime(number):
@@ -16,7 +16,7 @@ def prime(number):
 
 
 def main():
-    name = brain_games.main()
+    name = brain_games.scripts.brain_games.main()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count_answers = 0
     while count_answers < 3:

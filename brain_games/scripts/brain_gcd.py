@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.brain_games import main, name
+import brain_games.scripts.brain_games
 import math
 
 
 def main():
-    name = main()
+    name = brain_games.scripts.brain_games.main()
     print("Find the greatest common divisor of given numbers.")
     correct_answers = 0
     while (correct_answers < 3):

@@ -1,11 +1,11 @@
 from random import randint
 
 
-def ask():
+def ask_question():
     return 'What is the result of the expression?'
 
 
-def question():
+def generate_task():
     action = "*+-"[randint(0, 2)]
     number_1 = randint(0, 100)
     number_2 = randint(0, 100)
@@ -13,15 +13,15 @@ def question():
     return s
 
 
-def get_answer(question):
-    if question[3] != " ":
-        action = question[3]
-        number_1 = int(question[0:2])
-        number_2 = int(question[5:])
+def get_right_answer(task):
+    if task[3] != " ":
+        action = task[3]
+        number_1 = int(task[0:2])
+        number_2 = int(task[5:])
     else:
-        action = question[2]
-        number_1 = int(question[0])
-        number_2 = int(question[4:])
+        action = task[2]
+        number_1 = int(task[0])
+        number_2 = int(task[4:])
 
     match action:
         case "*":
@@ -34,11 +34,14 @@ def get_answer(question):
             pass
 
 
-def count_answers(expression, answer):
+def count_answers(task, answer):
     count = 0
-    right_answer = get_answer(expression)
-    if right_answer == int(answer):
-        count = 1
-    else:
+    right_answer = get_right_answer(task)
+    try:
+        if right_answer == int(answer):
+            count = 1
+        else:
+            count = 5
+    except ValueError:
         count = 5
     return count

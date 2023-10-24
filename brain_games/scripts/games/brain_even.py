@@ -2,17 +2,17 @@ from random import randint
 import sys
 
 
-def ask():
+def ask_question():
     return 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
-def question():
+def generate_task():
     number = randint(-sys.maxsize - 1, sys.maxsize)
     return number
 
 
-def get_answer(question):
-    return question % 2 and 'no' or 'yes'
+def get_right_answer(task):
+    return task % 2 and 'no' or 'yes'
 
 
 def count_answers(number, answer):

@@ -1,11 +1,11 @@
 from random import randint
 
 
-def ask():
+def ask_question():
     return "What number is missing in the progression?"
 
 
-def question():
+def generate_task():
     step = randint(-10, 11)
     length = randint(5, 11)
     numbers = [randint(0, 100)]
@@ -16,8 +16,8 @@ def question():
     return string
 
 
-def get_answer(question):
-    numbers = question.split(' ', -1)
+def get_right_answer(task):
+    numbers = task.split(' ', -1)
     right_answer = 0
     index = numbers.index('..')
     step = 0
@@ -30,11 +30,14 @@ def get_answer(question):
     return right_answer
 
 
-def count_answers(number, answer):
-    number = get_answer(number)
+def count_answers(task, answer):
+    right_answer = get_right_answer(task)
     count = 0
-    if number == int(answer):
-        count = 1
-    else:
-        count = 5
+    try:
+        if right_answer == int(answer):
+            count = 1
+        else:
+            count = 5
+    except ValueError:
+        count += 5
     return count

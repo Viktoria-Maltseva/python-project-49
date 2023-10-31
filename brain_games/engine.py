@@ -12,7 +12,7 @@ def run(game_name):
         correct_answer = game_name.is_correct(task, answer)
         if not correct_answer:
             print(f"'{answer}' is wrong answer ;(. "
-                + f"Correct answer was '{game_name.get_right_answer(task)}'")
+                  + f"Correct answer was '{game_name.get_right_answer(task)}'")
             return print(f"Let's try again, {name}!")
         print("Correct!")
     return print(f"Congratulations, {name}!")

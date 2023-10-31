@@ -3,7 +3,7 @@ import sys
 
 
 def ask_question():
-    return 'Answer "yes" if the number is even, otherwise answer "no"'
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_task():

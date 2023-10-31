@@ -3,7 +3,7 @@ import math
 
 
 def ask_question():
-    return 'Answer "yes" if given number is prime. Otherwiseanswer "no".'
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_task():
@@ -21,11 +21,8 @@ def get_right_answer(task):
     return right_answer
 
 
-def count_answers(task, answer):
-    count = 0
-    right_answer = get_right_answer(task)
-    if right_answer == answer:
-        count = 1
+def is_correct(task, answer):
+    if get_right_answer(task) == answer:
+        return True
     else:
-        count = 5
-    return count
+        return False

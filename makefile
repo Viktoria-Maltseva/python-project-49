@@ -3,15 +3,15 @@ install:
 brain-games:
 	poetry run python -m brain_games.scripts.brain_games
 brain-even:
-	poetry run python -m brain_games.scripts.run_game brain_even
+	poetry run python -m brain_games.scripts.brain_even
 brain-calc:
-	poetry run python -m brain_games.scripts.run_game brain_calc
+	poetry run python -m brain_games.scripts.brain_calc
 brain-gcd:
-	poetry run python -m brain_games.scripts.run_game brain_gcd
+	poetry run python -m brain_games.scripts.brain_gcd
 brain-progression:
-	poetry run python -m brain_games.scripts.run_game brain_progression
+	poetry run python -m brain_games.scripts.brain_progression
 brain-prime:
-	poetry run python -m brain_games.scripts.run_game brain_prime
+	poetry run python -m brain_games.scripts.brain_prime
 build:
 	poetry build
 publish:

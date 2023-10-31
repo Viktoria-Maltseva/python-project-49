@@ -6,11 +6,7 @@ def ask_question():
 
 
 def generate_task():
-    action = "*+-"[randint(0, 2)]
-    number_1 = randint(0, 100)
-    number_2 = randint(0, 100)
-    s = f"{number_1} {action} {number_2}"
-    return s
+    return f"{randint(0, 100)} {'*+-'[randint(0, 2)]} {randint(0, 100)}"
 
 
 def get_right_answer(task):
@@ -34,14 +30,10 @@ def get_right_answer(task):
             pass
 
 
-def count_answers(task, answer):
-    count = 0
-    right_answer = get_right_answer(task)
+def is_correct(task, answer):
     try:
-        if right_answer == int(answer):
-            count = 1
-        else:
-            count = 5
+        if get_right_answer(task) == int(answer):
+            return True
     except ValueError:
-        count = 5
-    return count
+        pass
+    return False

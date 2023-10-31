@@ -30,14 +30,10 @@ def get_right_answer(task):
     return right_answer
 
 
-def count_answers(task, answer):
-    right_answer = get_right_answer(task)
-    count = 0
+def is_correct(task, answer):
     try:
-        if right_answer == int(answer):
-            count = 1
-        else:
-            count = 5
+        if get_right_answer(task) == int(answer):
+            return True
     except ValueError:
-        count += 5
-    return count
+        pass
+    return False

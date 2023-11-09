@@ -6,3 +6,5 @@ dist/
 .coversge
 coverage.xml
 .pytest_cache/
+.lock
+.swp

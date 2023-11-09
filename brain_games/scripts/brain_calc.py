@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.engine import run
+from brain_games.games.brain_calc import import_functions
 
 
 def main():
-    module = __import__('brain_games.scripts.games.brain_calc',
-                        fromlist=['brain_calc'])
-    run(module)
+    run_game(*import_functions())
 
 
 if __name__ == "__main__":

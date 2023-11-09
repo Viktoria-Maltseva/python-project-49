@@ -1,6 +1,9 @@
 from random import randint
 import sys
 
+def import_functions():
+    return ask_question, generate_task, get_right_answer, is_correct
+
 
 def ask_question():
     return 'Answer "yes" if the number is even, otherwise answer "no".'

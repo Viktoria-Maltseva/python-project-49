@@ -1,6 +1,10 @@
 from random import randint
 
 
+def import_functions():
+    return ask_question, generate_task, get_right_answer, is_correct
+
+
 def ask_question():
     return "What number is missing in the progression?"
 

@@ -2,6 +2,10 @@ from random import randint
 import math
 
 
+def import_functions():
+    return ask_question, generate_task, get_right_answer, is_correct
+
+
 def ask_question():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 

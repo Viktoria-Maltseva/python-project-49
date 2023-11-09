@@ -11,7 +11,7 @@ def ask_question():
 
 
 def generate_task():
-    return randint(0, 100)
+    return randint(2, 100)
 
 
 def get_right_answer(task):

@@ -1,6 +1,7 @@
 from random import randint
 import sys
 
+
 def import_functions():
     return ask_question, generate_task, get_right_answer, is_correct
 

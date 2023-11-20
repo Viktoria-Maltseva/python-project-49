@@ -1,9 +1,10 @@
 from random import randint
 import math
+from brain_games.engine import run_game
 
 
-def import_functions():
-    return ask_question, generate_task, get_right_answer, is_correct
+def start_the_game():
+        run_game(ask_question, generate_task, get_right_answer)
 
 
 def ask_question():
@@ -22,11 +23,4 @@ def get_right_answer(task):
             break
     if right_answer == '':
         right_answer = 'yes'
-    return right_answer
-
-
-def is_correct(task, answer):
-    if get_right_answer(task) == answer:
-        return True
-    else:
-        return False
+    return str(right_answer)

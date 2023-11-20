@@ -1,8 +1,9 @@
 from random import randint
+from brain_games.engine import run_game
 
 
-def import_functions():
-    return ask_question, generate_task, get_right_answer, is_correct
+def start_the_game():
+        run_game(ask_question, generate_task, get_right_answer)
 
 
 def ask_question():
@@ -31,13 +32,4 @@ def get_right_answer(task):
     else:
         step = int(numbers[index - 1]) - int(numbers[index - 2])
         right_answer = int(numbers[index - 1]) + step
-    return right_answer
-
-
-def is_correct(task, answer):
-    try:
-        if get_right_answer(task) == int(answer):
-            return True
-    except ValueError:
-        pass
-    return False
+    return str(right_answer)

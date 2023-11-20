@@ -1,6 +1,9 @@
 import prompt
 
+
 NUMBER_ROUNDS = 3
+
+
 def run_game(ask_question, generate_task, get_right_answer):
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!\n{ask_question()}", end='\n')

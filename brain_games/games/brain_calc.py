@@ -3,7 +3,7 @@ from brain_games.engine import run_game
 
 
 def start_the_game():
-        run_game(ask_question, generate_task, get_right_answer)
+    run_game(ask_question, generate_task, get_right_answer)
 
 
 def ask_question():
